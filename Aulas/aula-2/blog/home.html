@@ -4,111 +4,110 @@
     <meta charset="UTF-8">
     <title>Seja bem-vindo ao nosso blog!</title>
 
-    <style>
-        label {
-            display: block;
-        }
-
-        form > div {
-            padding-bottom: 10px;
-        }
-
-        ul {
-            list-style: none;
-        }
-        dt:after {
-            content: ": ";
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<header>
+<header class="blog-header">
     <h1>Lorem Ipsum</h1>
 
-    <nav>
+    <nav class="menu">
         <ul>
             <li>
-                <a href="#">Rutrum</a>
-                <a href="#">Rhoncus</a>
-                <a href="#">Leo</a>
-                <a href="#">Vestibulum</a>
+                <a href="#Rutrum">Rutrum</a>
+            </li>
+            <li>
+                <a href="#Rhoncus">Rhoncus</a>
+            </li>
+            <li>
+                <a href="#Vestibulum">Vestibulum</a>
             </li>
         </ul>
     </nav>
 </header>
 
-<section>
-    <article>
+<section class="post-list">
+    <article id="Rutrum">
         <header>
             <h2><a href="">Malesuada fusce condimentum quam</a></h2>
-            <dl>
+            <dl class="post-details">
                 <dt>Categoria</dt>
-                <dd>Rutrum</dd>
+                <dd>
+                    <a href="">Rutrum</a>
+                </dd>
                 <dt>Autor</dt>
-                <dd>Risus massa</dd>
+                <dd>
+                    <a href="">Risus massa</a>
+                </dd>
             </dl>
         </header>
 
-        <blockquote>
+        <div class="post-image-container">
+            <img src="http://lorempixel.com/600/400/" alt="Malesuada fusce condimentum quam"/>
+        </div>
+
+        <p>
             Nec suscipit malesuada suspendisse lacinia nec magnis feugiat venenatis aliquam vitae libero cubilia sapien
             suspendisse a condimentum adipiscing volutpat dui consequat nunc posuere non molestie. Morbi a vestibulum
             velit in dignissim platea suspendisse nec vestibulum justo convallis commodo condimentum a eros a
             consectetur eu vestibulum a venenatis vestibulum conubia. Quam tellus quisque mus a viverra class facilisis
             a cum sagittis id penatibus potenti viverra malesuada aptent nam a in habitant vehicula sodales est
             condimentu...
-        </blockquote>
+        </p>
 
-        <div>
-            <a href="#">Ver post completo</a>
-        </div>
-
-        <div>
-            <img src="http://lorempixel.com/600/400/" alt="Malesuada fusce condimentum quam"/>
-        </div>
-
-        <div>
+        <div class="show-more-container">
             <a href="#">Ver post completo</a>
         </div>
     </article>
 
-    <article>
+    <article id="Rhoncus">
         <header>
             <h2><a href="">Fringilla aptent lacus dapibus</a></h2>
-            <dl>
+            <dl class="post-details">
                 <dt>Categoria</dt>
-                <dd>Rhoncus</dd>
+                <dd>
+                    <a href="">Rhoncusa</a>
+                </dd>
                 <dt>Autor</dt>
-                <dd>Lobortis semper odio consectetur</dd>
+                <dd>
+                    <a href="">Lobortis semper odio consectetur</a>
+                </dd>
             </dl>
         </header>
 
-        <blockquote>
+        <p>
             Ridiculus suspendisse leo scelerisque dictum in cursus et porta fusce vestibulum mus cum in consectetur ad
             nisi. Fringilla rhoncus primis leo pulvinar ornare a sagittis ultrices orci ut nascetur dui malesuada
             vestibulum. Imperdiet a vestibulum urna consectetur venenatis nullam penatibus a fusce sed dolor blandit
             lacinia magna consectetur lacus nunc scelerisque per etiam. Leo parturient inceptos arcu cras taciti ante
             amet a dolor amet maecenas neque id nec parturient sodales a parturient sodales tellus...
-        </blockquote>
+        </p>
 
-        <div>
+        <div class="show-more-container">
             <a href="#">Ver post completo</a>
         </div>
     </article>
 
-    <article>
+    <article id="Vestibulum">
         <header>
             <h2><a href="">Adipiscing sodales ad</a></h2>
-            <dl>
+            <dl class="post-details">
                 <dt>Categoria</dt>
-                <dd>Vestibulum</dd>
+                <dd>
+                    <a href="">Vestibulum</a>
+                </dd>
                 <dt>Autor</dt>
-                <dd>Taciti nisi imperdiet</dd>
+                <dd>
+                    <a href="#">Taciti nisi imperdiet</a>
+                </dd>
             </dl>
         </header>
 
-        <blockquote>
+        <div class="post-image-container">
+            <img src="http://lorempixel.com/600/400/" alt="Adipiscing sodales ad"/>
+        </div>
+
+        <p>
             Condimentum parturient adipiscing nam parturient habitasse est dis taciti a adipiscing eros nec posuere
             parturient ridiculus fermentum mauris sapien habitasse elit dignissim ac quis turpis etiam nulla maecenas
             arcu. Cubilia ut per condimentum ullamcorper euismod imperdiet interdum et vestibulum vivamus feugiat sed
@@ -116,42 +115,34 @@
             magna et curabitur purus vestibulum. Parturient ad sociosqu suspendisse eget fermentum erat urna proin netus
             orci a placerat aenean morbi ornare vehicula praesent a scelerisque a vehicula phasellus condimentum feugiat
             suspendisse...
-        </blockquote>
+        </p>
 
-        <div>
-            <a href="#">Ver post completo</a>
-        </div>
-
-        <div>
-            <img src="http://lorempixel.com/600/400/" alt="Adipiscing sodales ad"/>
-        </div>
-
-        <div>
+        <div class="show-more-container">
             <a href="#">Ver post completo</a>
         </div>
     </article>
 </section>
 
-<footer>
+<footer class="blog-contact">
     <h2>Entre em contato</h2>
 
     <form>
-        <div>
+        <div class="form-group">
             <label for="name">Nome</label>
             <input id="name" name="name" type="text" placeholder="Digite seu nome"/>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" placeholder="Digite seu email"/>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="city">Cidade</label>
             <input id="city" name="city" type="text" placeholder="Digite sua cidade"/>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="state">Estado</label>
             <select name="state" id="state">
                 <option value="">Selecione uma cidade</option>
@@ -161,12 +152,12 @@
             </select>
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="message">Mensagem</label>
             <textarea id="message" name="message" placeholder="Digite sua mensagem" rows="3"></textarea>
         </div>
 
-        <div>
+        <div class="form-group">
             <label>
                 <input name="newsletter" type="checkbox"/>&nbsp;Deseo receber newsletter por email.
             </label>

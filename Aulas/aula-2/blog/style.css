@@ -1,0 +1,142 @@
+/* reset */
+html, body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-contact, .post-list, .blog-header {
+    padding: 10px;
+}
+
+.blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #00bcd4;
+}
+
+.blog-header, .blog-contact {
+    background-color: #00bcd4;
+}
+
+.blog-header h1, .blog-contact h2 {
+    color: #ffffff;
+}
+
+.menu {
+    text-align: center;
+}
+
+nav.menu > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu > ul > li {
+    display: inline-block;
+}
+
+nav.menu > ul > li > a {
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #00bcd4;
+}
+
+nav.menu > ul > li > a:hover {
+    background-color: #e5e5e5;
+}
+
+nav.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Post */
+
+.post-list h2 a {
+    text-decoration: none;
+    color: #00bcd4
+}
+
+.post-list article {
+    border-bottom: 1px solid rgba(0, 188, 212, 0.3);
+    padding-bottom: 10px;
+    color: #757575;
+}
+
+.post-list article:last-child {
+    border-bottom: 0;
+}
+
+.post-list dl.post-details dt, .post-list dl.post-details dd {
+    display: inline-block;
+}
+
+.post-list dl.post-details dt {
+    font-weight: 500;
+}
+
+.post-list dl.post-details dt:after {
+    content: ': ';
+}
+
+.post-list dl.post-details dd {
+    margin: 0;
+}
+
+.post-list dl.post-details dd + dt:before {
+    margin-left: 10px;
+    content: "-";
+    margin-right: 10px;
+}
+
+.post-list dl.post-details dd a {
+    color: #039BE5;
+    text-decoration: none;
+}
+
+.post-list dl.post-details dd a:hover {
+    text-decoration: underline;
+}
+
+.post-list .post-image-container img {
+    width: 100%;
+}
+
+.post-list p:before {
+    content: '';
+    margin: 20px;
+}
+
+.post-list .show-more-container {
+    text-align: right;
+}
+
+.post-list .show-more-container a {
+    color: #039BE5;
+    text-decoration: none;
+    padding: 0 16px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 36px;
+}
+
+.post-list .show-more-container a:hover {
+    background-color: rgba(158, 158, 158, .2);
+}
+
+/* Form */
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+}
