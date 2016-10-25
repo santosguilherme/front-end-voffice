@@ -1,12 +1,12 @@
-## 1º Aula - 18/10
+## 1ï¿½ Aula - 18/10
 
-* UX e Design centrado no usuário
-    * O que é UX Design?
-    * O que é DCU?
+* UX e Design centrado no usuÃ¡rio
+    * O que Ã© UX Design?
+    * O que Ã© DCU?
         * ISO 13407
     * Entrevistas
     * Contextos de uso
-    * Especificações de requisitos
+    * EspecificaÃ§Ãµes de requisitos
     * Sketches
         * http://ui-patterns.com/
         * http://pttrns.com/

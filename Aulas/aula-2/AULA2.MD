@@ -1,6 +1,6 @@
-## 2º Aula - 20/10
+## 2Âº Aula - 20/10
 
-* HTML e CSS básico 1
-    * Imagens aleatórias
+* HTML e CSS bÃ¡sico 1
+    * Imagens aleatÃ³rias
         * http://lorempixel.com/
         * http://placehold.it 
