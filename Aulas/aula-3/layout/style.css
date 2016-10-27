@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700|Roboto:300,400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.details-title {
+    font-family: 'Raleway Semibold', sans-serif;
+    font-size: 22px;
+    color: #222222;
+}
+
+.details-text {
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 16px;
+    color: #848484;
+}
+
+/* HEADER */
+.header-page {
+    background-image: url('images/bg.jpg');
+    padding-top: 110px;
+    height: 700px;
+    text-align: center;
+}
+
+.header-page .header-page__title-content {
+    height: 175px;
+}
+
+.header-page .header-page__title-content .header-title {
+    background: url('images/logo.png') no-repeat center;
+    height: 100%;
+}
+
+.header-page .header-page__title-content .header-subtitle {
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 36px;
+    color: #222222;
+}
+
+/* CONTENT */
+.main {
+    background-color: #eee;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.main .container {
+    padding: 0 70px;
+}
+
+.main .container .content-details-box {
+    float: left;
+    margin: 55px 0 0;
+    height: 120px;
+    width: 300px;
+}
+
+.main .container .content-details-box:last-child {
+    margin-bottom: 55px;
+}
+
+.main .container .content-details-box:nth-child(2n) {
+    float: right;
+}
+
+.main .container .content-details-box:nth-child(2n-1) {
+    clear: both;
+}
+
+.main .content-smartphone {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translate(-50%);
+    background: url('images/iphone.png');
+    width: 400px;
+    height: 800px;
+}
+
+/* FOOTER */
+.footer-page {
+    background-color: #ddd;
+}
+
+.footer-page .container {
+    padding: 55px 0;
+}
+
+.footer-page .container .footer-info__content {
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+
+.footer-page .container ul.platform-list {
+    list-style: none;
+}
+
+.footer-page .container ul.platform-list > li {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #c4c4c4;
+}
+
+.footer-page .container ul.platform-list > li:hover {
+    background: #757575;
+}
+
+.footer-page .container .footer-info__video {
+    float: right;
+    width: 515px;
+    height: 315px;
+}
+
+.footer-page .container .footer-info__video iframe {
+    width: 515px;
+    height: 315px;
+}
