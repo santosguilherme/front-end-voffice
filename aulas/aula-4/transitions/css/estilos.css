@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('slider.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Mudar de cor do link */
+a {
+    transition: color 1s 0.5s;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Tamanho do botão e cor de fundo */
+
+.botao {
+    background: #fff;
+    transition: font-size 1s, background 1s;
+}
+
+.botao:hover {
+    cursor: pointer;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0ms 500ms, opacity 500ms 0ms;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0ms 0ms, opacity 500ms 0ms;
+}
+
+.modal.aberto .modal-janela {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .modal-janela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 60px 20px 20px;
+    background: #ffffff;
+    width: 400px;
+
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: transform 350ms;;
+}
+
+.modal .modal-janela .modal-fechar {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 0;
+    background-color: transparent;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    cursor: pointer;
+
+    transition: color 350ms;
+}
+
+.modal .modal-janela .modal-fechar:hover {
+    color: #666;
+}
+
+.modal .modal-janela .modal-conteudo {
+
+}
+
