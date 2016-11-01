@@ -1,0 +1,18 @@
+.footer-options {
+  @include clearfix();
+
+  background: #eee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+
+  &__completed {
+    float: left;
+  }
+
+  &__notifications {
+    float: right;
+  }
+}

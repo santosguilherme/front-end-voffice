@@ -2,5 +2,6 @@
 
 * CSS Transitions e Pré processadores   
     * SASS
-    * Compass
+        * Compass
+    * Cross browser - https://www.browserstack.com/ 
      

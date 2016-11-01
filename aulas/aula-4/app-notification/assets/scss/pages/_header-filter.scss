@@ -1,0 +1,14 @@
+.header-filter {
+  @include clearfix();
+  
+  padding: 10px 15px;
+  background: #eeeeee;
+
+  &__date-options {
+    float: left;
+  }
+
+  &__text-search {
+    float: right;
+  }
+}

@@ -1,0 +1,228 @@
+/* line 5, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../scss/utils/_resest.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../scss/utils/_resest.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, ../scss/utils/_resest.scss */
+body {
+  line-height: 1;
+}
+
+/* line 37, ../scss/utils/_resest.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 41, ../scss/utils/_resest.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 45, ../scss/utils/_resest.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 51, ../scss/utils/_resest.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../scss/components/_buttons.scss */
+.btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 6, ../scss/components/_buttons.scss */
+.btn-group > .btn {
+  position: relative;
+  float: left;
+}
+
+/* line 12, ../scss/components/_buttons.scss */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  border: 1pt solid #ccc;
+}
+
+/* line 22, ../scss/components/_buttons.scss */
+.float-btn {
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  height: 56px;
+  margin: auto;
+  min-width: 56px;
+  width: 56px;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(158, 158, 158, 0.2);
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  position: relative;
+  line-height: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 1, ../scss/pages/_header-filter.scss */
+.header-filter {
+  padding: 10px 15px;
+  background: #eeeeee;
+}
+/* line 3, ../scss/utils/_mixins.scss */
+.header-filter:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 7, ../scss/pages/_header-filter.scss */
+.header-filter__date-options {
+  float: left;
+}
+/* line 11, ../scss/pages/_header-filter.scss */
+.header-filter__text-search {
+  float: right;
+}
+
+/* line 1, ../scss/pages/_main-content.scss */
+.main-content {
+  position: relative;
+}
+/* line 4, ../scss/pages/_main-content.scss */
+.main-content .float-btn {
+  position: relative;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* line 1, ../scss/pages/_footer-options.scss */
+.footer-options {
+  background: #eee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+}
+/* line 3, ../scss/utils/_mixins.scss */
+.footer-options:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 11, ../scss/pages/_footer-options.scss */
+.footer-options__completed {
+  float: left;
+}
+/* line 15, ../scss/pages/_footer-options.scss */
+.footer-options__notifications {
+  float: right;
+}
