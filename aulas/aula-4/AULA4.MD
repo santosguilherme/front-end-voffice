@@ -1,4 +1,6 @@
 ## 4º Aula - 27/10
 
-* CSS Transitions e Pré processadores      
+* CSS Transitions e Pré processadores   
+    * SASS
+    * Compass
      
