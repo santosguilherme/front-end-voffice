@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+    <style>
+        .main-header {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="container main-header">
+    <img src="http://tinyhomedesignresources.com/img/generic-logo.png" class="logo"/>
+    <button class="btn btn-primary novo pull-right" onclick="addNewEvent()">
+        Criar nota
+    </button>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 events-list">
+            <div class="alert alert-success event" role="alert">
+                Comprar pão
+
+                <button type="button" class="close" aria-label="Close" onclick="removeEvent(this)">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-info note" role="alert">
+                Reunião
+                <span class="label label-default pull-right">9:30</span>
+            </div>
+        </div>
+
+        <div class="col-sm-3 notifications">
+            <a href="#">Facebook <span class="badge">42</span></a> <br/>
+            <a href="#">Twitter <span class="badge">13</span></a> <br/>
+            <a href="#">Email <span class="badge">01</span></a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    function updateNotifications() {
+        // Alterar dados
+        var notifications = document.querySelectorAll('.notifications a');
+
+        (notifications || []).forEach(function (link) {
+            var badge = link.querySelector('.badge');
+            badge.innerHTML = Math.round(badge.innerHTML / 0.5);
+        });
+    }
+
+    var interval = setInterval(function () {
+        updateNotifications();
+    }, 1000);
+
+    setTimeout(function () {
+        clearInterval(interval);
+    }, 2000);
+
+    // Exemplos
+    var eventsListContainer = document.querySelector('.events-list');
+    var eventModel = eventsListContainer.querySelector('.event');
+    var noteModel = eventsListContainer.querySelector('.note');
+
+    eventModel.remove();
+    noteModel.remove();
+
+    var header = document.querySelector('.main-header');
+
+    function addNewEvent() {
+        var element = eventsListContainer.children.length % 2 == 0 ? noteModel : eventModel;
+
+        eventsListContainer.appendChild(element.cloneNode(true));
+    }
+
+    function removeEvent(element) {
+        confirm('Deseja remover a nota?') && element.parentNode.remove();
+    }
+</script>
+</body>
+</html>
