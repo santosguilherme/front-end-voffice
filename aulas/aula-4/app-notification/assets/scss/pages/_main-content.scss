@@ -1,10 +1,38 @@
 .main-content {
   position: relative;
+  height: calc(100vh - 100px);
+  padding: 15px 15px 0;
+
+  .event-card {
+    background: #e5e5e5;
+    position: relative;
+    height: 150px;
+
+    $padding-card: 10px;
+
+    &__title {
+      top: $padding-card;
+      left: $padding-card;
+      position: absolute;
+    }
+
+    &__date {
+      top: $padding-card;
+      right: $padding-card;
+      position: absolute;
+    }
+
+    &__share {
+      bottom: $padding-card;
+      right: $padding-card;
+      position: absolute;
+    }
+  }
 
   .float-btn {
-    position: relative;
+    position: absolute;
 
     bottom: 15px;
     right: 15px;
-    }
+  }
 }

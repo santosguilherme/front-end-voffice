@@ -195,22 +195,44 @@ table {
 /* line 1, ../scss/pages/_main-content.scss */
 .main-content {
   position: relative;
+  height: calc(100vh - 100px);
+  padding: 15px 15px 0;
 }
-/* line 4, ../scss/pages/_main-content.scss */
-.main-content .float-btn {
+/* line 6, ../scss/pages/_main-content.scss */
+.main-content .event-card {
+  background: #e5e5e5;
   position: relative;
+  height: 150px;
+}
+/* line 13, ../scss/pages/_main-content.scss */
+.main-content .event-card__title {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+/* line 19, ../scss/pages/_main-content.scss */
+.main-content .event-card__date {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+/* line 25, ../scss/pages/_main-content.scss */
+.main-content .event-card__share {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+}
+/* line 32, ../scss/pages/_main-content.scss */
+.main-content .float-btn {
+  position: absolute;
   bottom: 15px;
   right: 15px;
 }
 
 /* line 1, ../scss/pages/_footer-options.scss */
 .footer-options {
-  background: #eee;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px 0;
+  height: 50px;
+  background: #eeeeee;
 }
 /* line 3, ../scss/utils/_mixins.scss */
 .footer-options:after {
@@ -218,11 +240,16 @@ table {
   display: table;
   clear: both;
 }
-/* line 11, ../scss/pages/_footer-options.scss */
+/* line 7, ../scss/pages/_footer-options.scss */
 .footer-options__completed {
   float: left;
 }
-/* line 15, ../scss/pages/_footer-options.scss */
+/* line 11, ../scss/pages/_footer-options.scss */
 .footer-options__notifications {
   float: right;
+}
+/* line 15, ../scss/pages/_footer-options.scss */
+.footer-options button {
+  height: 50px;
+  width: 50px;
 }
