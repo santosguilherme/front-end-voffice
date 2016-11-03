@@ -176,6 +176,10 @@ table {
 .header-filter {
   padding: 10px 15px;
   background: #eeeeee;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 /* line 3, ../scss/utils/_mixins.scss */
 .header-filter:after {
@@ -183,11 +187,11 @@ table {
   display: table;
   clear: both;
 }
-/* line 7, ../scss/pages/_header-filter.scss */
+/* line 11, ../scss/pages/_header-filter.scss */
 .header-filter__date-options {
   float: left;
 }
-/* line 11, ../scss/pages/_header-filter.scss */
+/* line 15, ../scss/pages/_header-filter.scss */
 .header-filter__text-search {
   float: right;
 }
@@ -196,36 +200,37 @@ table {
 .main-content {
   position: relative;
   height: calc(100vh - 100px);
-  padding: 15px 15px 0;
+  margin: 60px 15px;
+  z-index: -1;
 }
-/* line 6, ../scss/pages/_main-content.scss */
+/* line 7, ../scss/pages/_main-content.scss */
 .main-content .event-card {
   background: #e5e5e5;
   position: relative;
   height: 150px;
 }
-/* line 13, ../scss/pages/_main-content.scss */
+/* line 14, ../scss/pages/_main-content.scss */
 .main-content .event-card__title {
   top: 10px;
   left: 10px;
   position: absolute;
 }
-/* line 19, ../scss/pages/_main-content.scss */
+/* line 20, ../scss/pages/_main-content.scss */
 .main-content .event-card__date {
   top: 10px;
   right: 10px;
   position: absolute;
 }
-/* line 25, ../scss/pages/_main-content.scss */
+/* line 26, ../scss/pages/_main-content.scss */
 .main-content .event-card__share {
   bottom: 10px;
   right: 10px;
   position: absolute;
 }
-/* line 32, ../scss/pages/_main-content.scss */
+/* line 33, ../scss/pages/_main-content.scss */
 .main-content .float-btn {
-  position: absolute;
-  bottom: 15px;
+  position: fixed;
+  bottom: 60px;
   right: 15px;
 }
 
@@ -233,6 +238,10 @@ table {
 .footer-options {
   height: 50px;
   background: #eeeeee;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 /* line 3, ../scss/utils/_mixins.scss */
 .footer-options:after {
@@ -240,15 +249,15 @@ table {
   display: table;
   clear: both;
 }
-/* line 7, ../scss/pages/_footer-options.scss */
+/* line 11, ../scss/pages/_footer-options.scss */
 .footer-options__completed {
   float: left;
 }
-/* line 11, ../scss/pages/_footer-options.scss */
+/* line 15, ../scss/pages/_footer-options.scss */
 .footer-options__notifications {
   float: right;
 }
-/* line 15, ../scss/pages/_footer-options.scss */
+/* line 19, ../scss/pages/_footer-options.scss */
 .footer-options button {
   height: 50px;
   width: 50px;

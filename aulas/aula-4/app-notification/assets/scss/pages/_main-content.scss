@@ -1,7 +1,8 @@
 .main-content {
   position: relative;
   height: calc(100vh - 100px);
-  padding: 15px 15px 0;
+  margin: 60px 15px;
+  z-index: -1;
 
   .event-card {
     background: #e5e5e5;
@@ -30,9 +31,8 @@
   }
 
   .float-btn {
-    position: absolute;
-
-    bottom: 15px;
+    position: fixed;
+    bottom: 60px;
     right: 15px;
   }
 }
