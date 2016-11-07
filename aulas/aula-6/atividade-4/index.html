@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+
+</head>
+<body>
+
+<header class="user-github-search">
+    <h1 class="user-github-search__title">Usuário do GitHub</h1>
+
+    <form class="user-github-search__form">
+        <div class="input-group">
+            <input type="text" class="form-control" name="username" placeholder="Digite o nome do usuário do GitHub">
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-search" type="button">
+                        <i class="ion-search"></i>
+                    </button>
+                </span>
+        </div>
+
+    </form>
+</header>
+
+<main class="user-github-details">
+
+    <div class="user-github-details__personal">
+        <div class="image"></div>
+        <div class="info">
+            <ul>
+                <li class="info__name">
+                    <h1>Guilherme Santos</h1>
+                </li>
+                <li>
+                    <i class="ion-ios-email-outline"></i>&nbsp;
+                    sntguilherme@gmail.com
+                </li>
+                <li>
+                    <i class="ion-earth"></i>
+                    https://br.linkedin.com/in/santosguilherme
+                </li>
+                <li>
+                    <i class="ion-briefcase"></i>
+                    Softplan Planejamento de Sistemas LTDA
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="user-github-details__repo">
+        <div class="box-repo-detail user-repos">
+            <span class="value">8</span>
+            Repositórios
+        </div>
+        <div class="box-repo-detail user-followers">
+            <span class="value">17</span>
+            Seguidores
+        </div>
+        <div class="box-repo-detail user-following">
+            <span class="value">43</span>
+            Seguindo
+        </div>
+    </div>
+
+    <div class="user-github-details__bio">
+        <label>Bibliografia</label>
+
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Si num tem leite então bota uma pinga aí cumpadi! Não sou faixa
+            preta cumpadi, sou preto inteiris, inteiris. Interessantiss quisso pudia ce receita de bolis, mais bolis eu
+            num gostis. Diuretics paradis num copo é motivis de denguis.
+
+            Casamentiss faiz malandris se pirulitá. Quem manda na minha terra sou Euzis! Pra lá , depois divoltis
+            porris, paradis. Sapien in monti palavris qui num significa nadis i pareci latim. </p>
+    </div>
+</main>
+
+<section class="search-not-found">
+    Nenhum resultado encontrado
+</section>
+
+<script src="lib/jquery-3.1.1.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

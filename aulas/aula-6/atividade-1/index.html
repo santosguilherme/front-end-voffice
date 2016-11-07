@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula #06 - Atividade 01</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Manipulando elementos com jQuery</h1>
+
+            <ul class="lista">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Consectetur adipisicing elit.</li>
+                <li>Dolorum voluptatem natus, incidunt veniam ut odio.</li>
+                <li class="destaque">Accusantium quam cum.</li>
+                <li>Ad corrupti tempora molestias maxime ipsa quam.</li>
+            </ul>
+
+            <img src="http://placehold.it/400x300">
+
+            <hr>
+
+            <form action="#" id="meu-formulario">
+                <label for="c_texto">Campo de texto: </label><br>
+                <input type="text" id="c_texto" placeholder="Digite um valor"><br><br>
+
+                <label for="c_estados">Estados</label><br>
+                <select id="c_estados">
+                    <optgroup label="Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label for="c_mensagem">Mensagem:</label><br>
+                <textarea id="c_mensagem" cols="100" rows="20">Exemplo de mensagem</textarea><br><br>
+
+                <label><input type="checkbox" id="c_check"> Campo checkbox</label>
+
+                <hr>
+
+                <!-- Botão de ação -->
+                <button class="btn-acao-01">Executar 01</button>
+                <button class="btn-acao-02">Executar 02</button>
+            </form>
+        </div>
+
+        <script src="lib/jquery-3.1.1.js"></script>
+
+        <script>
+            function executarAcao01(evt) {
+                evt.preventDefault();
+                console.debug('Ação 01');
+
+                // Faça aqui seu JS / jQuery
+
+                // Altere o texto do último item da lista
+                var $list = $('.lista');
+                $list.find('li:last-child').text('TEXTO ALTERADO');
+
+                // Coloque no campo de mensagem o texto do item com a classe "destaque"
+                var text = $list.find('.destaque').text();
+                $('#c_mensagem').val(text);
+
+                // Exiba no console o valor de todos os campos do formulário
+                $('#meu-formulario input, #meu-formulario select, #meu-formulario textarea').each(function () {
+                    var $element = $(this);
+                    console.log('ID:', $element.attr('id'), 'Valor:', $element.val());
+                });
+
+                // Altere o caminho da imagem
+                $('.container img').attr('src', 'http://lorempixel.com/400/300/');
+            }
+
+            function executarAcao02(evt) {
+                evt.preventDefault();
+                console.debug('Ação 02');
+
+                // Faça aqui seu JS / jQuery
+
+                // Selecione um estado a partir de uma sigla digitada no campo de texto
+                var inputText = $('#meu-formulario #c_texto').val();
+                inputText && $('#c_estados').val(inputText.toUpperCase());
+
+                // Marque a checkbox
+                $('#meu-formulario #c_check').prop('checked', true);
+
+                // Retire a classe “destaque” do item da lista
+                $('.lista .destaque').removeClass('destaque');
+
+                // Aplique a classe “destaque” ao primeiro item ímpar
+                $('.lista li:odd:first').addClass('destaque');
+            }
+
+            document.querySelector('.btn-acao-01').addEventListener('click', executarAcao01);
+            document.querySelector('.btn-acao-02').addEventListener('click', executarAcao02);
+        </script>
+    </body>
+</html>

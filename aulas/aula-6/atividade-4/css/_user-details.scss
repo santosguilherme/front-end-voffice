@@ -1,0 +1,79 @@
+.user-github-details {
+  padding: 15px;
+
+  &__personal {
+    @include clearfix();
+    @include box-info();
+
+    .image {
+      float: left;
+      background: url("https://avatars.githubusercontent.com/u/8635147?v=3") center no-repeat;
+      background-size: cover;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 2px 3px 5px 0 rgba(#c7c7c7, 0.75);
+    }
+
+    .info {
+      float: left;
+      padding: 20px 30px;
+
+      li {
+        margin: 5px 0;
+      }
+
+      &__name {
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__repo {
+    @include clearfix();
+
+    padding: 15px 0;
+
+    .box-repo-detail {
+      @include box-info();
+
+      float: left;
+      width: (100% / 3);
+      text-align: center;
+      margin: 0 7.5px;
+      box-sizing: border-box;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & + .box-repo-detail {
+        //margin-left: 15px;
+      }
+    }
+
+    .value {
+      font-size: 20px;
+      font-weight: 600;
+      display: block;
+    }
+  }
+
+  &__bio {
+    @include box-info();
+
+    label {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    p {
+      text-indent: 2em;
+    }
+  }
+}
