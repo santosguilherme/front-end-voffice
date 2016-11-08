@@ -1,7 +1,7 @@
 .user-github-details {
   padding: 15px;
   display: none;
-  
+
   &__personal {
     @include clearfix();
     @include box-info();
@@ -40,21 +40,11 @@
       @include box-info();
 
       float: left;
-      width: (100% / 3);
+      width: calc(#{100% / 3} - 10px);
       text-align: center;
-      margin: 0 7.5px;
-      box-sizing: border-box;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
 
       & + .box-repo-detail {
-        //margin-left: 15px;
+        margin-left: 15px;
       }
     }
 
