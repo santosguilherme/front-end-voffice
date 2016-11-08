@@ -1,6 +1,7 @@
 .user-github-details {
   padding: 15px;
-
+  display: none;
+  
   &__personal {
     @include clearfix();
     @include box-info();
@@ -69,7 +70,7 @@
 
     label {
       margin-bottom: 10px;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     p {

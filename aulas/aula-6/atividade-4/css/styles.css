@@ -56,10 +56,13 @@ html, body {
     text-align: center; }
 
 .search-not-found {
-  display: none; }
+  display: none;
+  padding: 20px 15px;
+  text-align: center; }
 
 .user-github-details {
-  padding: 15px; }
+  padding: 15px;
+  display: none; }
   .user-github-details__personal {
     border: 1pt solid #cccccc;
     box-shadow: 2px 3px 5px 0 rgba(199, 199, 199, 0.75);
@@ -71,7 +74,7 @@ html, body {
       clear: both; }
     .user-github-details__personal .image {
       float: left;
-      background: url("https://avatars.githubusercontent.com/u/8635147?v=3") center no-repeat;
+      background: center no-repeat;
       background-size: cover;
       height: 150px;
       width: 150px;
@@ -116,7 +119,7 @@ html, body {
     padding: 15px 15px; }
     .user-github-details__bio label {
       margin-bottom: 10px;
-      font-weight: 500; }
+      font-weight: 600; }
     .user-github-details__bio p {
       text-indent: 2em; }
 
