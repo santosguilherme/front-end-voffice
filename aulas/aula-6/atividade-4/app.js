@@ -96,7 +96,7 @@ $(function () {
     }
 
     function configureViewWithErrorResponse(userName) {
-        $('.search-not-found').html('Nenhum usuário encontrado com o id "<em>' + userName + '</em>".').show('slow');
+        $('.search-not-found').html('Nenhum usuário encontrado com o usuário "<em>' + userName + '</em>".').show('slow');
         $('.user-github-details').hide('slow');
     }
 })
