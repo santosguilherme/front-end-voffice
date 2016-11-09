@@ -1,0 +1,29 @@
+.user-github-search {
+  padding: 15px;
+  background-color: #cccccc;
+  box-shadow: 0 4px 5px 0 rgba(#e5e5e5, 1);
+
+  &__title {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__form {
+  }
+
+  .clear-search {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+
+    a {
+      cursor: pointer;
+    }
+  }
+}
+
+.search-not-found {
+  display: none;
+  padding: 20px 15px;
+  text-align: center;
+}

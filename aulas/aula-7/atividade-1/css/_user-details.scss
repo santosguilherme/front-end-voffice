@@ -1,0 +1,114 @@
+.user-github-details {
+  padding: 15px;
+  display: none;
+
+  &__personal {
+    @include clearfix();
+    @include box-info();
+
+    .image {
+      float: left;
+      background: url("https://avatars.githubusercontent.com/u/8635147?v=3") center no-repeat;
+      background-size: cover;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 2px 3px 5px 0 rgba(#c7c7c7, 0.75);
+    }
+
+    .info {
+      float: left;
+      padding: 20px 30px;
+
+      li {
+        margin: 5px 0;
+      }
+
+      &__name {
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__bio {
+    @include box-info();
+    margin-top: 15px;
+
+    label {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    p {
+      text-indent: 2em;
+    }
+  }
+
+  &__statistics {
+    @include clearfix();
+
+    padding: 15px 0;
+
+    .box-repo-detail {
+      @include box-info();
+
+      float: left;
+      width: calc(#{100% / 3} - 10px);
+      text-align: center;
+
+      & + .box-repo-detail {
+        margin-left: 15px;
+      }
+    }
+
+    .value {
+      font-size: 20px;
+      font-weight: 600;
+      display: block;
+    }
+  }
+
+  &__repos {
+    @include box-info();
+
+    label {
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .repos-list {
+
+      .repo-info {
+
+        & + .repo-info {
+          padding-top: 15px;
+          border-top: 1pt solid #e5e5e5;
+          margin-top: 15px;
+        }
+
+        &:last-child {
+          margin-bottom: 5px;
+        }
+
+        &__name {
+          cursor: pointer;
+        }
+
+        &__description {
+          font-size: 14px;
+          margin: 10px 0;
+          color: #767676;
+        }
+
+        i {
+          color: #767676;
+        }
+
+        .value {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
