@@ -80,11 +80,13 @@
     .repos-list {
 
       .repo-info {
+        padding-top: 15px;
+        padding-left: 5px;
+        border-top: 1pt solid #e5e5e5;
+        margin-top: 15px;
 
-        & + .repo-info {
-          padding-top: 15px;
-          border-top: 1pt solid #e5e5e5;
-          margin-top: 15px;
+        &:first-child {
+          margin-top: 0;
         }
 
         &:last-child {

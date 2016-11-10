@@ -135,21 +135,24 @@ html, body {
     .user-github-details__repos label {
       margin-bottom: 15px;
       font-weight: 600; }
-    .user-github-details__repos .repos-list .repo-info + .repo-info {
+    .user-github-details__repos .repos-list .repo-info {
       padding-top: 15px;
+      padding-left: 5px;
       border-top: 1pt solid #e5e5e5;
       margin-top: 15px; }
-    .user-github-details__repos .repos-list .repo-info:last-child {
-      margin-bottom: 5px; }
-    .user-github-details__repos .repos-list .repo-info__name {
-      cursor: pointer; }
-    .user-github-details__repos .repos-list .repo-info__description {
-      font-size: 14px;
-      margin: 10px 0;
-      color: #767676; }
-    .user-github-details__repos .repos-list .repo-info i {
-      color: #767676; }
-    .user-github-details__repos .repos-list .repo-info .value {
-      font-size: 14px; }
+      .user-github-details__repos .repos-list .repo-info:first-child {
+        margin-top: 0; }
+      .user-github-details__repos .repos-list .repo-info:last-child {
+        margin-bottom: 5px; }
+      .user-github-details__repos .repos-list .repo-info__name {
+        cursor: pointer; }
+      .user-github-details__repos .repos-list .repo-info__description {
+        font-size: 14px;
+        margin: 10px 0;
+        color: #767676; }
+      .user-github-details__repos .repos-list .repo-info i {
+        color: #767676; }
+      .user-github-details__repos .repos-list .repo-info .value {
+        font-size: 14px; }
 
 /*# sourceMappingURL=styles.css.map */
