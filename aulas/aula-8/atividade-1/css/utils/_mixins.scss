@@ -1,0 +1,16 @@
+@mixin clearfix {
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+}
+
+@mixin box-info {
+  border: 1pt solid #cccccc;
+  box-shadow: 2px 3px 5px 0 rgba(#c7c7c7, 0.75);
+  box-sizing: border-box;
+  padding: 15px 15px;
+}

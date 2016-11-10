@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+
+    <link rel="stylesheet" href="css/components/confirm-modal.css"/>
+    <link rel="stylesheet" href="css/components/loading.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header class="user-github-search">
+    <h1 class="user-github-search__title">Usuário do GitHub</h1>
+
+    <form class="user-github-search__form">
+        <div class="input-group">
+            <input type="text" class="form-control" name="username" placeholder="Digite o nome do usuário do GitHub"
+                   autofocus>
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-search" type="button">
+                        <i class="ion-search"></i>
+                    </button>
+                </span>
+        </div>
+
+        <div class="clear-search">
+            <a>Limpar pesquisa</a>
+        </div>
+    </form>
+</header>
+
+<main class="user-github-details">
+    <div class="user-github-details__personal">
+        <div class="image"></div>
+        <div class="info">
+            <ul>
+                <li class="info__name">
+                    <h1 class="value"></h1>
+                </li>
+                <li class="info__email">
+                    <i class="ion-ios-email-outline"></i>&nbsp;
+                    <span class="value"></span>
+                </li>
+                <li class="info__site">
+                    <i class="ion-earth"></i>
+                    <span class="value"></span>
+                </li>
+                <li class="info__company">
+                    <i class="ion-briefcase"></i>
+                    <span class="value"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="user-github-details__bio">
+        <label>Bibliografia</label>
+
+        <p></p>
+    </div>
+
+    <div class="user-github-details__statistics">
+        <div class="box-repo-detail user-repos">
+            <span class="value"></span>
+            Repositórios
+        </div>
+        <div class="box-repo-detail user-followers">
+            <span class="value"></span>
+            Seguidores
+        </div>
+        <div class="box-repo-detail user-following">
+            <span class="value"></span>
+            Seguindo
+        </div>
+    </div>
+
+    <div class="user-github-details__repos">
+        <label>Repositórios</label>
+
+        <div class="repos-list">
+        </div>
+    </div>
+</main>
+
+<section class="search-not-found">
+    Nenhum resultado encontrado
+</section>
+
+<script src="lib/jquery-3.1.1.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/handlebars-v4.0.5.js"></script>
+
+<script src="js/confirm-modal.js"></script>
+<script src="js/loading.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

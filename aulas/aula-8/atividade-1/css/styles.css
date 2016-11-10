@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  font-family: 'Roboto', sans-serif; }
+
+.user-github-search {
+  padding: 15px;
+  background-color: #cccccc;
+  box-shadow: 0 4px 5px 0 #e5e5e5; }
+  .user-github-search__title {
+    text-align: center;
+    margin-bottom: 5px; }
+  .user-github-search .clear-search {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px; }
+    .user-github-search .clear-search a {
+      cursor: pointer; }
+
+.search-not-found {
+  display: none;
+  padding: 20px 15px;
+  text-align: center; }
+
+.user-github-details {
+  padding: 15px;
+  display: none; }
+  .user-github-details__personal {
+    border: 1pt solid #cccccc;
+    box-shadow: 2px 3px 5px 0 rgba(199, 199, 199, 0.75);
+    box-sizing: border-box;
+    padding: 15px 15px; }
+    .user-github-details__personal:after {
+      content: '';
+      display: table;
+      clear: both; }
+    .user-github-details__personal .image {
+      float: left;
+      background: url("https://avatars.githubusercontent.com/u/8635147?v=3") center no-repeat;
+      background-size: cover;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 2px 3px 5px 0 rgba(199, 199, 199, 0.75); }
+    .user-github-details__personal .info {
+      float: left;
+      padding: 20px 30px; }
+      .user-github-details__personal .info li {
+        margin: 5px 0; }
+      .user-github-details__personal .info__name {
+        font-size: 30px;
+        font-weight: 600; }
+  .user-github-details__bio {
+    border: 1pt solid #cccccc;
+    box-shadow: 2px 3px 5px 0 rgba(199, 199, 199, 0.75);
+    box-sizing: border-box;
+    padding: 15px 15px;
+    margin-top: 15px; }
+    .user-github-details__bio label {
+      margin-bottom: 10px;
+      font-weight: 600; }
+    .user-github-details__bio p {
+      text-indent: 2em; }
+  .user-github-details__statistics {
+    padding: 15px 0; }
+    .user-github-details__statistics:after {
+      content: '';
+      display: table;
+      clear: both; }
+    .user-github-details__statistics .box-repo-detail {
+      border: 1pt solid #cccccc;
+      box-shadow: 2px 3px 5px 0 rgba(199, 199, 199, 0.75);
+      box-sizing: border-box;
+      padding: 15px 15px;
+      float: left;
+      width: calc(100%/3 - 10px);
+      text-align: center; }
+      .user-github-details__statistics .box-repo-detail + .box-repo-detail {
+        margin-left: 15px; }
+    .user-github-details__statistics .value {
+      font-size: 20px;
+      font-weight: 600;
+      display: block; }
+  .user-github-details__repos {
+    border: 1pt solid #cccccc;
+    box-shadow: 2px 3px 5px 0 rgba(199, 199, 199, 0.75);
+    box-sizing: border-box;
+    padding: 15px 15px; }
+    .user-github-details__repos label {
+      margin-bottom: 15px;
+      font-weight: 600; }
+    .user-github-details__repos .repos-list .repo-info {
+      padding: 15px 0 15px 5px;
+      border-top: 1pt solid #e5e5e5; }
+      .user-github-details__repos .repos-list .repo-info:first-child {
+        margin-top: 0; }
+      .user-github-details__repos .repos-list .repo-info:last-child {
+        padding-bottom: 5px; }
+      .user-github-details__repos .repos-list .repo-info__name {
+        cursor: pointer; }
+      .user-github-details__repos .repos-list .repo-info__description {
+        font-size: 14px;
+        margin: 10px 0;
+        color: #767676; }
+      .user-github-details__repos .repos-list .repo-info i {
+        color: #767676; }
+      .user-github-details__repos .repos-list .repo-info .value {
+        font-size: 14px; }
+
+/*# sourceMappingURL=styles.css.map */
