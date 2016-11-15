@@ -1,0 +1,24 @@
+<div class="post {% if include.index == 1 %}post-full{% endif %}">
+
+    <header class="post__image">
+        <img src="{{ include.post.image | prepend: site.assets.images }}" alt=""/>
+    </header>
+
+    <article class="">
+
+        <div class="post__category">
+            {{ include.post.category }}
+        </div>
+
+        <h1 class="post__title">{{ include.post.title }}</h1>
+
+        <div class="post__text">{{ include.post.text }}</div>
+
+
+        {% if include.index == 1 %}
+        <div class="post__comment">
+            <a>Leave a comment</a>
+        </div>
+        {% endif %}
+    </article>
+</div>

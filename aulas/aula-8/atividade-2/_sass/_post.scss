@@ -1,0 +1,52 @@
+.post {
+  flex: 1;
+  width: 50%;
+  background-color: lighten(blue, 30);
+
+  &__image {
+    margin-bottom: 20px;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  &__category {
+    @include category-font();
+
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+  }
+
+  &__comment {
+    @include category-font();
+
+    margin-top: 20px;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.post-full {
+  background-color: lighten(red, 30);
+  width: 100%;
+
+  .post__image {
+    padding: 0 50px 60px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

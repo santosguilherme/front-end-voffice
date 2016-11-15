@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+
+  &__newsletter {
+    text-align: center;
+    background: #e5e5e5;
+    padding: 50px 0;
+
+    order: 5;
+    flex: 1;
+
+    .title-form {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      position: relative;
+
+      .newsletter-input {
+        border: 0;
+        padding: 5px 40px 3px 2px;
+        background: none;
+        border-bottom: 1px solid #626262;
+        min-width: 358px;
+
+        &:active, &:focus {
+          outline: none;
+        }
+      }
+
+      ::-webkit-input-placeholder {
+        @include default-font();
+      }
+
+      ::-moz-placeholder {
+        @include default-font();
+      }
+
+      :-ms-input-placeholder {
+        @include default-font();
+      }
+
+      .input-group-addon {
+        position: absolute;
+        right: 3px;
+        top: -2px;
+        font-size: 20px;
+
+        i {
+          display: inline-block;
+          transform: rotate(47deg);
+        }
+      }
+    }
+  }
+
+  &__load-more {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 60px 0;
+
+    .btn {
+      font-size: 20px;
+      background: none;
+      padding: 10px 20px;
+      border: 1pt solid #626262;
+      color: #626262;
+      cursor: pointer;
+    }
+  }
+}

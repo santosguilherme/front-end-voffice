@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="main">
+
+    <div class="main__newsletter">
+        <form action="">
+            <h1 class="title-form">
+                <span>Sign up for our newsletter!</span>
+            </h1>
+
+            <span class="input-group">
+                <input type="email" class="newsletter-input" placeholder="Enter a valid email address"/>
+
+                <span class="input-group-addon">
+                    <i class="ion-ios-paperplane-outline"></i>
+                </span>
+            </span>
+        </form>
+    </div>
+
+    {% for item in site.posts %}
+
+        {% include post.html post=item index=forloop.index %}
+
+    {% endfor %}
+
+    <div class="main__load-more">
+        <button class="btn">
+            Load more
+        </button>
+    </div>
+</div>

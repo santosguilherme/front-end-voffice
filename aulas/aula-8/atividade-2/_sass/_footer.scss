@@ -1,0 +1,33 @@
+.site-footer {
+  @include clearfix();
+
+  background: #e5e5e5;
+  padding: 30px 50px 30px 0;
+
+  li {
+    cursor: pointer;
+
+    & + li {
+      margin-left: 10px;
+    }
+  }
+
+  &__terms {
+    @include list-inline();
+
+    float: left;
+    width: 50%;
+  }
+
+  &__social {
+    @include list-inline();
+
+    float: left;
+    width: 50%;
+    text-align: right;
+
+    .social-title {
+      cursor: auto;
+    }
+  }
+}

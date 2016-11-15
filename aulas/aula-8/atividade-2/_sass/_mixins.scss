@@ -1,0 +1,37 @@
+@mixin image-replacement {
+  text-indent: 105%;
+  overflow: hidden;
+  white-space: nowrap;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin list-inline {
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+@mixin default-font {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 14px;
+  color: #626262;
+}
+
+@mixin category-font {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+}

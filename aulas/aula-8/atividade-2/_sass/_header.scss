@@ -1,0 +1,34 @@
+.site-header {
+  @include clearfix();
+
+  padding: 60px 50px;
+
+  &__logo {
+    @include image-replacement;
+
+    background-image: url("/assets/images/logo.png");
+
+    float: left;
+    width: 30%;
+  }
+
+  &__categories {
+    float: left;
+    width: 70%;
+    text-align: right;
+
+    ul {
+      @include list-inline();
+
+      text-transform: uppercase;
+
+      li {
+        cursor: pointer;
+
+        & + li {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
