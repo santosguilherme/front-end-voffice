@@ -1,4 +1,10 @@
-<div class="post {% if include.index == 1 %}post-full{% endif %}">
+{% assign is_first_index = false %}
+
+{% if include.index == 1 %}
+    {% assign is_first_index = true %}
+{% endif %}
+
+<div class="post {% if is_first_index %}post-full{% endif %}">
 
     <header class="post__image">
         <img src="{{ include.post.image | prepend: site.assets.images }}" alt=""/>
@@ -13,16 +19,16 @@
         <h1 class="post__title">{{ include.post.title }}</h1>
 
         <div class="post__text">
-            {% if include.index == 1 %}
+            {% if is_first_index %}
                 {{ include.post.text }}
-            {% endif %}
 
-            {% if include.index != 1 %}
+            {% else %}
+
                 {{ include.post.text | truncate: 200 }}
             {% endif %}
         </div>
 
-        {% if include.index == 1 %}
+        {% if is_first_index %}
         <div class="post__comment">
             <a>Leave a comment</a>
         </div>
