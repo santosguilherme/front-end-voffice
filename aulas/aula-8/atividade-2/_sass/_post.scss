@@ -1,6 +1,6 @@
 .post {
-  flex: 1;
-  width: 50%;
+  flex: 1 50%;
+  //width: 50%;
   background-color: lighten(blue, 30);
 
   &__image {
@@ -40,7 +40,7 @@
 
 .post-full {
   background-color: lighten(red, 30);
-  width: 100%;
+  flex: 1 100%;
 
   .post__image {
     padding: 0 50px 60px;

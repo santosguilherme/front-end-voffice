@@ -12,8 +12,15 @@
 
         <h1 class="post__title">{{ include.post.title }}</h1>
 
-        <div class="post__text">{{ include.post.text }}</div>
+        <div class="post__text">
+            {% if include.index == 1 %}
+                {{ include.post.text }}
+            {% endif %}
 
+            {% if include.index != 1 %}
+                {{ include.post.text | truncate: 200 }}
+            {% endif %}
+        </div>
 
         {% if include.index == 1 %}
         <div class="post__comment">
