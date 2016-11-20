@@ -1,0 +1,17 @@
+@import "font-awesome";
+@import "bootstrap";
+
+
+.user-form {
+  .input-group-addon {
+    min-width: 43px;
+  }
+}
+
+.table.table-users {
+  tbody {
+    td {
+      vertical-align: middle;
+    }
+  }
+}

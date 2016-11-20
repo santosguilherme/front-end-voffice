@@ -1,4 +1,4 @@
-## 1� Aula - 18/10
+## 1º Aula - 18/10
 
 * UX e Design centrado no usuário
     * O que é UX Design?

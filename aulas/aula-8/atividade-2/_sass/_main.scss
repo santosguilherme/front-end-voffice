@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 
   &__newsletter {
@@ -9,8 +9,9 @@
     background: #e5e5e5;
     padding: 50px 0;
 
-    order: 5;
-    flex: 1 100%;
+    order: 2;
+    flex: 1 1 auto;
+    width: 100%;
 
     .title-form {
       font-size: 30px;
@@ -62,6 +63,8 @@
     flex: 1 1 auto;
     text-align: center;
     padding: 60px 0;
+    width: 100%;
+    order: 4;
 
     .btn {
       font-size: 20px;
