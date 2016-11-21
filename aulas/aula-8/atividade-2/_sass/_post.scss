@@ -1,14 +1,13 @@
 .post {
   flex: 1 1 auto;
-  width: calc(50% - 20px);
-  background-color: lighten(blue, 30);
-  margin: 20px;
+  width: calc(50% - 100px);
+  margin: 50px;
 
-  &:nth-child(-n+5) {
+  &:nth-child(-n+7) {
     order: 1;
   }
 
-  &:nth-child(n+6) {
+  &:nth-child(n+7) {
     order: 3;
   }
 
@@ -17,7 +16,8 @@
 
     img {
       display: block;
-      width: 100%;
+      width: 320px;
+      margin: 0 auto;
     }
   }
 
@@ -49,15 +49,12 @@
 }
 
 .post-full {
-  background-color: lighten(red, 30);
   flex: 1 1 auto;
   width: calc(100% - 20px);
 
   .post__image {
-    padding: 0 50px 60px;
-
     img {
-      //width: 100%;
+      width: 100%;
     }
   }
 }
