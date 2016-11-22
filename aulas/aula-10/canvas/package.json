@@ -1,0 +1,12 @@
+{
+  "name": "atividades-canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1"
+  }
+}
