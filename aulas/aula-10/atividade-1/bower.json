@@ -1,0 +1,22 @@
+{
+  "name": "gulpbasic",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Guilherme Santos <sntguilherme@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/santosguilherme/front-end-voffice",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.1.1",
+    "font-awesome": "fontawesome#4.7.0",
+    "bootstrap-sass": "3.3.7"
+  }
+}
